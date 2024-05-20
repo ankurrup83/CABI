@@ -29,17 +29,17 @@ export const HomeSearch = () => {
                         <div className="homesearch-feild">  
                             <label>Pickup Date</label> 
                             <div class="input-group">
-                                <DatePicker selected={startDate} onChange={(date) => setStartDate(date)} />
+                                <DatePicker className="form-control" selected={startDate} onChange={(date) => setStartDate(date)} />
                                 <span class="input-group-addon"><img src="./assets/home/calender.png" alt="calender"/></span>
                             </div> 
                         </div>   
 
-                        <div className="homesearch-feild">  
+                        <div className="homesearch-feild last-feild">  
                             <label>Pickup Time</label> 
                             
                         </div> 
                             
-                        <button type="submit"><img src="./assets/home/search.png" alt="search"/></button>
+                        <button className='search-butn' type="submit"><img src="./assets/home/search.png" alt="search"/></button>
                     </div>
 
                     <div className="homehead-heading">
@@ -60,6 +60,7 @@ export const HomeSearch = () => {
         <img src="./assets/home/homehead-bg.webp" className='search-banner' alt="banner"/>
     </div>
    
+          
     </>
   )
 }
