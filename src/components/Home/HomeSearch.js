@@ -2,32 +2,9 @@ import React, { useState } from "react";
 import Form from "react-bootstrap/Form";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
-import { LocalizationProvider } from "@mui/x-date-pickers/LocalizationProvider";
-import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
-import { TimePicker } from "@mui/x-date-pickers/TimePicker";
-import TextField from "@mui/material/TextField";
-import Box from "@mui/material/Box";
-import { styled } from "@mui/material/styles";
-
 export const HomeSearch = () => {
-  const [selectedTime, setSelectedTime] = useState(null);
-  const handleTimeChange = (newValue) => {
-    setSelectedTime(newValue);
-  };
   const [startDate, setStartDate] = useState(new Date());
-  const CustomTextField = styled(TextField)({
-    "& .MuiInputBase-root": {
-      borderRadius: "4px",
-      border: "1px solid #ccc",
-      padding: "8px",
-    },
-    "& .MuiInputBase-input": {
-      padding: "0",
-    },
-    "& .MuiOutlinedInput-notchedOutline": {
-      border: "none",
-    },
-  });
+
   return (
     <>
       <div className="homepage-head">
@@ -59,6 +36,7 @@ export const HomeSearch = () => {
                   <label>Pickup Date</label>
                   <div class="input-group">
                     <DatePicker
+                      className="form-control"
                       selected={startDate}
                       onChange={(date) => setStartDate(date)}
                     />
@@ -68,37 +46,11 @@ export const HomeSearch = () => {
                   </div>
                 </div>
 
-                <div className="homesearch-feild">
+                <div className="homesearch-feild last-feild">
                   <label>Pickup Time</label>
-                  <LocalizationProvider dateAdapter={AdapterDayjs}>
-                    <Box
-                      sx={{
-                        display: "flex",
-                        flexDirection: "column",
-                        alignItems: "center",
-                        mt: 4,
-                      }}
-                    >
-                      <TimePicker
-                        value={selectedTime}
-                        onChange={handleTimeChange}
-                        renderInput={(params) => (
-                          <CustomTextField
-                            {...params}
-                            variant="outlined"
-                            InputProps={{
-                              ...params.InputProps,
-                              disableUnderline: true,
-                            }}
-                          />
-                        )}
-                        ampm={false}
-                      />
-                    </Box>
-                  </LocalizationProvider>
                 </div>
 
-                <button type="submit">
+                <button className="search-butn" type="submit">
                   <img src="./assets/home/search.png" alt="search" />
                 </button>
               </div>

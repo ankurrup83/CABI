@@ -14,18 +14,28 @@ background: #FFF6E5;
 padding: 5px;
 border-radius: 50px;
 display: flex;
+align-items: center;
 justify-content: space-between;
 }
 
 .homesearch-feild{
-padding: 14px 15px 5px;
-border-right: 1px solid rgb(0 0 0 / 10%);
-width: 30%;
+padding: 0px 15px;
+border-right: 1px solid rgb(0 0 0 / 20%);
+width: 25%;
+}
+
+.last-feild{
+border-right: 0px;
 }
 
 .homesearch-feild .input-group{
 align-items: center;
 flex-wrap: unset;
+}
+
+.homesearch-feild .input-group .input-group-addon img{
+width: 24px;
+margin-left: 12px;
 }
 
 .homesearch-feild .form-control{
@@ -37,15 +47,52 @@ border: 0px;
 color: rgb(0 0 0 / 40%);
 font-size: 15px;
 font-weight: 500;
-padding: 6px 0px;
+padding: 4px 0px 0px;
 }
 
-.homesearch-feild  .form-control:focus{
+.homesearch-feild .form-control:focus{
 color: rgb(0 0 0 / 40%);
 outline: none;
 box-shadow: none;
 background: none;
 }
+
+.homesearch-feild .form-control::placeholder {
+color: rgb(0 0 0 / 40%);
+}
+
+.homesearch-feild .form-control::-ms-input-placeholder {
+color: rgb(0 0 0 / 40%);
+}
+
+.homesearch-feild label{
+font-size: 14px;
+color: #000;
+display: block;
+font-weight: 500;
+}
+
+.home-searchbar .search-butn{
+background: #F58220;
+border: 0px;
+border-radius: 50%;
+width: 60px;
+height: 60px;
+display: flex;
+align-items: center;
+justify-content: center;
+transition: all 0.2s ease-In;
+}
+
+.home-searchbar .search-butn img{
+width: 24px;
+}
+
+.home-searchbar .search-butn:hover{
+background: #2A347C;
+}
+
+
 
 
 
