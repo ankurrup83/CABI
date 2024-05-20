@@ -8,6 +8,11 @@ import { HomeFleet } from './HomeFleet'
 import { HomeCorevalue } from './HomeCorevalue'
 import { HomeWork } from './HomeWork'
 import { HomeApp } from './HomeApp'
+import { HomeNews } from './HomeNews'
+import { HomeFAQ } from './HomeFAQ'
+import { HomeBusiness } from './HomeBusiness'
+import { HomeVideo } from './HomeVideo'
+import { HomeTestimonial } from './HomeTestimonial'
 
 export default function Home() {
   return (
@@ -18,9 +23,14 @@ export default function Home() {
     <HomeFeature/>
     <HomeFleet/>
     <HomeCorevalue/>
-    <HomeWork/>
-    <HomeApp/>
+    <HomeWork />
+    <HomeBusiness />
+    <HomeVideo />
+    <HomeTestimonial/>
 
+    <HomeApp/>
+    <HomeNews/>
+    <HomeFAQ/>
     <Footer/>
     </>
   

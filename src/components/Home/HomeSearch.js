@@ -1,7 +1,10 @@
-import React from 'react'
+import React,{useState} from 'react'
 import Form from 'react-bootstrap/Form';
-
+import DatePicker from "react-datepicker";
+import "react-datepicker/dist/react-datepicker.css";
 export const HomeSearch = () => {
+    const [startDate, setStartDate] = useState(new Date());
+    
   return (
     <>
     <div className="homepage-head">
@@ -9,7 +12,32 @@ export const HomeSearch = () => {
             <div className="row"> 
                 <div className="col-lg-12">
                     <div className='home-searchbar'>
+                        <div className="homesearch-feild"> 
+                            <label>Trip Type</label>
+                            <select name="" id="" className="form-control" required="">
+                            <option value="">Drop To Airport</option>
+                            <option value="">Drop To Airport</option>
+                            <option value="">Drop To Airport</option>
+                            </select> 
+                        </div>  
+                                                    
+                        <div className="homesearch-feild">     
+                            <label>From</label>                         
+                            <input className="form-control" name="" id="" type="text" placeholder="City. Airport. Address or Hotel"/>     
+                        </div>
 
+                        <div className="homesearch-feild">  
+                            <label>Pickup Date</label> 
+                            <DatePicker selected={startDate} onChange={(date) => setStartDate(date)} />
+                            <img src="./assets/home/calender.png" alt="calender"/>
+                        </div>   
+
+                        <div className="homesearch-feild">  
+                            <label>Pickup Time</label> 
+                            
+                        </div> 
+                            
+                        <button type="submit"><img src="./assets/home/search.png" alt="search"/></button>
                     </div>
 
                     <div className="homehead-heading">
@@ -29,7 +57,7 @@ export const HomeSearch = () => {
 
         <img src="./assets/home/homehead-bg.webp" className='search-banner' alt="banner"/>
     </div>
-    
+   
     </>
   )
 }

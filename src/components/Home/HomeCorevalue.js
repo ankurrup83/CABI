@@ -3,6 +3,7 @@ import Slider from "react-slick";
 export const HomeCorevalue = () => {
     var settings2 = {
         dots: true,
+        arrows: false,
         infinite: true,
         speed: 1200,
         slidesToShow: 4,
