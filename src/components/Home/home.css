@@ -18,7 +18,33 @@ justify-content: space-between;
 }
 
 .homesearch-feild{
-    
+padding: 14px 15px 5px;
+border-right: 1px solid rgb(0 0 0 / 10%);
+width: 30%;
+}
+
+.homesearch-feild .input-group{
+align-items: center;
+flex-wrap: unset;
+}
+
+.homesearch-feild .form-control{
+border-radius: 0px;
+outline: none;
+box-shadow: none;
+background: none;
+border: 0px;
+color: rgb(0 0 0 / 40%);
+font-size: 15px;
+font-weight: 500;
+padding: 6px 0px;
+}
+
+.homesearch-feild  .form-control:focus{
+color: rgb(0 0 0 / 40%);
+outline: none;
+box-shadow: none;
+background: none;
 }
 
 

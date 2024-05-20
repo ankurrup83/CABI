@@ -8,7 +8,7 @@ export const HomeTestimonial = () => {
         speed: 1200,
         slidesToShow: 3,
         slidesToScroll: 1,
-        //centerMode: true,
+        centerMode: true,
         autoplay: true,
         pauseOnHover: false,
         cssEase: "ease",
