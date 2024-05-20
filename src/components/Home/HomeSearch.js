@@ -28,8 +28,10 @@ export const HomeSearch = () => {
 
                         <div className="homesearch-feild">  
                             <label>Pickup Date</label> 
-                            <DatePicker selected={startDate} onChange={(date) => setStartDate(date)} />
-                            <img src="./assets/home/calender.png" alt="calender"/>
+                            <div class="input-group">
+                                <DatePicker selected={startDate} onChange={(date) => setStartDate(date)} />
+                                <span class="input-group-addon"><img src="./assets/home/calender.png" alt="calender"/></span>
+                            </div> 
                         </div>   
 
                         <div className="homesearch-feild">  
