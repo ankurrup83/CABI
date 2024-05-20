@@ -1,0 +1,113 @@
+
+.getstarted-box{
+margin-top: 40px;
+position: relative;
+}
+
+.getstarted-box img{
+border-radius: 12px;
+}
+
+.getstarted-detail{
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+padding: 0px 50px;
+width: 100%;
+text-align: center;
+}
+
+.getstarted-detail h4{
+font-family: "Inter", sans-serif;
+color: #fff;
+font-size: 30px;
+font-weight: 600;
+margin-bottom: 5px;
+}
+
+.getstarted-detail p{
+color: #fff;
+}
+
+
+.footer{
+background: url(../../../public/assets/home/footer-bg.webp) no-repeat;
+background-position: center;
+background-size: cover;
+padding-top: 200px;
+margin-top: -90px;
+}
+
+.footer-logo img{
+width: 110px;
+}
+
+.footer-logo p{
+color: #fff;
+margin: 12px 0px 0px;
+}
+
+.footer-links{
+margin: 0px 0px 0px 30px;
+padding: 0;
+list-style: none;
+}
+
+.footer-links li{
+margin-bottom: 16px;
+line-height: 1;
+}
+
+.footer-links li:last-child {
+margin-bottom: 0px;
+}
+
+.footer-links li a{
+color: #FFF6E5;
+font-size: 15px;
+transition: all 0.2s ease-In;
+}
+
+.footer-links li a:hover {
+color: #F58220;
+padding-left: 3px;
+}
+
+.footer-copyright{
+border-top: 1px solid rgb(255 255 255 / 18%);
+padding: 15px 0px;
+margin-top: 40px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+
+.footer-copyright p{
+color: #fff;
+font-size: 13px;
+margin: 0;
+}
+
+.footer-social{
+display: flex;
+margin: 0;
+padding: 0;
+list-style: none;
+}
+
+.footer-social li{
+margin-left: 15px;
+}
+
+.footer-social li a{
+color: rgb(255 255 255 / 40%);
+font-size: 15px;
+transition: all 0.2s ease-In;
+}
+
+.footer-social li a:hover{
+color: #F58220;
+}
+
+

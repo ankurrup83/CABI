@@ -13,8 +13,19 @@ height: auto;
 background: #FFF6E5;
 padding: 5px;
 border-radius: 50px;
-height: 70px;
+display: flex;
+justify-content: space-between;
 }
+
+.homesearch-feild{
+    
+}
+
+
+
+
+
+
 
 .homebanner{
 position: absolute;
@@ -357,4 +368,367 @@ top: 50%;
 transform: translateY(-50%);
 height: 100%;
 z-index: -1;
+}
+
+.skilapp-content .heading {
+font-size: 50px;
+}
+
+.skilapp-content .heading span{
+color: #F58220;
+}
+
+.skilapp-content p{
+color: rgb(0 0 0 / 70%);
+width: 78%;
+margin: 8px 0px 20px;
+}
+
+.skilapp-content ul{
+display: flex;
+align-items: center;
+margin: 0;
+list-style: none;
+padding: 0;
+}
+
+.skilapp-content ul li{
+margin-right: 12px;
+}
+
+.skilapp-content ul li img{
+width: 150px;
+-webkit-transition: all 0.2s ease;
+-moz-transition: all 0.2s ease;
+-o-transition: all 0.2s ease;
+transition: all 0.2s ease;
+}
+
+.skilapp-content ul li a:hover img {
+-webkit-transform: translateY(-3px);
+-moz-transform: translateY(-3px);
+-o-transform: translateY(-3px);
+transform: translateY(-3px);
+}
+
+.skilapp-content ul li:nth-child(1) img{
+width: 90px;
+}
+
+/*-----*/
+
+.home-newsupdate{
+margin: 80px 0px;
+}
+
+.newsupdate-head{
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+
+.newsupdate-slider {
+padding-bottom: 30px;
+margin-top: 40px;
+}
+
+.newsupdate-slider .slick-slide {
+padding: 0px 12px;
+}
+
+.newsupdate-inner{
+position: relative;
+}
+
+.newsupdate-inner img{
+border-radius:15px;
+}
+
+.newsupdate-inner div{
+position: absolute;
+bottom: 0;
+left: 0;
+right: 0;
+width: 100%;
+padding: 0px 15px 15px;
+}
+
+.newsupdate-inner h4{
+color: #fff;
+text-transform: capitalize;
+font-weight: 800;
+font-size: 22px;
+}
+
+.newsupdate-inner a{
+color: rgb(255 255 255 / 60%);
+font-size: 13px;
+text-transform: uppercase;
+transition: all 0.2s ease-In;
+}
+
+.newsupdate-box:hover .newsupdate-inner a{
+color: #F58220;
+}
+
+.newsupdate-box span{
+color: #000;
+font-size: 15px;
+display: block;
+text-align: right;
+margin: 5px 0px;
+position: relative;
+}
+
+.newsupdate-box span:before {
+position: absolute;
+content: '';
+background: #F58220;
+width: 60%;
+height: 1px;
+left: 0;
+top: 50%;
+transform: translateY(-50%);
+}
+
+/*-----*/
+
+.home-faq{
+margin-bottom: 80px;
+}
+
+/*-----*/
+
+.hone-business{
+margin: 80px 0px;
+}
+
+.skil-business{
+background: url(../../../public/assets/home/business-bg.webp) no-repeat;
+background-position: center;
+background-size: cover;
+border-radius: 15px;
+padding: 80px 0px;
+}
+
+.skil-business .heading {
+color: #fff;
+}
+
+.skil-business p {
+margin: 0;
+color: #fff;
+}
+
+.skil-business ul {
+list-style: none;
+padding: 30px;
+margin: 18px -30px 18px 0px;
+border-radius: 12px;
+background: radial-gradient(#FFAA2C 0%, #F47B14 70%);
+display: flex;
+justify-content: space-between;
+}
+
+.skil-business ul li{
+width: 30%;
+position: relative;
+}
+
+.skil-business ul li span{
+color: #fff;
+font-size: 22px;
+font-weight: 700;
+margin: 8px 0px 4px;
+display: block;
+line-height: 1.2;
+}
+
+.skil-business ul li img{
+width: 45px;
+}
+
+.skil-business ul li:before {
+content: '';
+position: absolute;
+width: 1px;
+height: 100%;
+top: 0;
+right: -10px;
+background: linear-gradient(rgb(255 255 255 / 5%), #ffffff, rgb(255 255 255 / 5%));
+}
+
+.skil-business ul li:last-child:before {
+display: none;
+}
+
+/*-------*/
+
+.honepage-video{
+position: relative;
+}
+
+.honepage-video .heading {
+color: #fff;
+margin-top: 40px;
+}
+
+.home-newvideo-box{
+-webkit-transition: 1s ease-in-out;
+transition: 1s ease-in-out;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100%;
+position: absolute;
+left: 0;
+top: 0;
+width: 100%;
+text-align: center;
+} 
+
+.home-newvideo-box-content{
+position: relative;
+}
+
+.home-newvideo-box-content .parallex-homevideo{
+width: 100%;
+height: 555px;
+object-fit: cover;
+}
+
+.video-play-button {
+position: relative;
+z-index: 1;
+box-sizing: content-box;
+display: inline-block;
+width: 20px;
+height: 19px;
+border-radius: 50%;
+padding: 18px 20px 18px 28px;
+}
+
+.video-play-button:before {
+content: "";
+position: absolute;
+z-index: 0;
+left: 50%;
+top: 50%;
+transform: translateX(-50%) translateY(-50%);
+display: block;
+width: 80px;
+height: 80px;
+background: #fff;
+border-radius: 50%;
+animation: pulse-border 1500ms ease-out infinite;
+}
+
+.video-play-button:after {
+content: "";
+position: absolute;
+z-index: 1;
+left: 50%;
+top: 50%;
+transform: translateX(-50%) translateY(-50%);
+display: block;
+width: 80px;
+height: 80px;
+background: #fff;
+border-radius: 50%;
+transition: all 200ms;
+}
+
+.video-play-button span {
+display: block;
+position: relative;
+z-index: 3;
+width: 0;
+height: 0;
+border-left: 18px solid #F58220;
+border-top: 10px solid transparent;
+border-bottom: 10px solid transparent;
+}
+
+@keyframes pulse-border {
+    0% {
+    transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
+    opacity: 1;
+    }
+    100% {
+    transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.8);
+    opacity: 0;
+    }
+}
+
+/*------*/
+
+.home-testimonial {
+margin: 80px 0px;
+}
+
+.testimonial-slider {
+padding-bottom: 30px;
+margin-top: 40px;
+}
+
+.home-testimonial .slick-slide {
+padding: 0px 12px;
+}
+
+.home-testimonial .heading span{
+color: #F58220;
+}
+
+.testimonial-box{
+background: #FEEBD2;
+padding: 30px;
+border-radius: 15px;
+text-align: center;
+}
+
+.testimonial-box h4{
+color: #000;
+font-family: "Inter", sans-serif;
+font-size: 28px;
+font-weight: 800;
+text-transform: uppercase;
+}
+
+.testimonial-box p{
+color: rgb(0 0 0 / 60%);
+}
+
+.testimonial-box span{
+color: #F58220;
+text-transform: uppercase;
+font-size: 14px;
+font-weight: 500;
+}
+
+.home-testimonial .slick-list{
+padding: 0px !important;
+}
+
+/* .home-testimonial .slick-slide,
+.home-testimonial .slick-slide[aria-hidden="true"]:not(.slick-cloned) ~ .slick-cloned[aria-hidden="true"] {
+transform: scale(.80) translateZ(0);
+transition: all .3s ease-in-out;
+}
+
+.home-testimonial .slick-center,
+.home-testimonial .slick-slide[aria-hidden="true"]:not([tabindex="-1"]) + .slick-cloned[aria-hidden="true"] {
+transform: scale(1) translateZ(0);
+} */
+
+
+.home-testimonial .slick-center .testimonial-box{
+background: #2A347C;
+}
+
+.home-testimonial .slick-center .testimonial-box h4 {
+color: #fff;
+}
+
+.home-testimonial .slick-center .testimonial-box p {
+color: #fff;
 }

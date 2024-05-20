@@ -150,6 +150,92 @@ margin-top: 6px;
 margin-top: 6px;
 }
 
+/*-- button ---*/
+
+.default-btn {
+position: relative;
+width: 140px;
+padding: 10px;
+background: #FFF6E5;
+border: 1px solid #F58220;
+transform: translate3d(0px, 0%, 0px);
+font-weight: 500;
+font-size: 13px;
+text-transform: uppercase;
+transition-delay: 0.6s;
+overflow: hidden;
+border-radius: 50px;
+display: inline-block;
+}
+.default-btn:before {
+content: '';
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background: #F58220;
+border-radius: 50% 50% 0 0;
+transform: translateY(100%) scaleY(0.5);
+transition: all 0.6s ease;
+}
+.default-btn:after {
+content: '';
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background: #FFF6E5;
+transform: translateY(0) scaleY(1);
+transition: all 0.6s ease;
+}
+.default-btn div {
+position: relative;
+top: 50%;
+width: 100%;
+height: 18px;
+overflow: hidden;
+}
+.default-btn span {
+position: absolute;
+z-index: 1;
+top: 0;
+left: 0;
+width: 100%;
+text-align: center;
+transition: transform 0.5s ease;
+}
+.default-btn span:first-child {
+color: #fff;
+transform: translateY(24px);
+}
+.default-btn span:last-child {
+color: #0C2F64;
+transform: translateY(0);
+}
+.default-btn:hover {
+background: #F58220;
+transition: background 0.2s linear;
+transition-delay: 0.6s;
+}
+.default-btn:hover:after {
+border-radius: 0 0 50% 50%;
+transform: translateY(-100%) scaleY(0.5);
+transition-delay: 0;
+}
+.default-btn:hover:before {
+border-radius: 0;
+transform: translateY(0) scaleY(1);
+transition-delay: 0;
+}
+.default-btn:hover span:first-child {
+transform: translateY(0);
+}
+.default-btn:hover span:last-child {
+transform: translateY(-24px);
+}
+
 /*-- slick dot ---*/
 
 .slick-dots {
@@ -201,8 +287,44 @@ color: rgb(0 0 0 / 70%);
 margin: 0;
 }
 
+/*-----*/
 
+.stick {
+padding: 8px 0px;
+background: #FEEAD1;
+box-shadow: 0 1px 15px rgba(0, 0, 0, 0.1);
+}
 
+.stick .logo img {
+width: 80px;
+}
 
+/*-----*/
 
+.faq-accord{
+margin-top: 40px;
+}
 
+.faq-accord .accordion-button{
+background-color: transparent !important;
+box-shadow: none !important;
+padding: 18px 0px !important;
+font-family: "Inter", sans-serif;
+color: rgb(0 0 0 / 80%) !important;
+font-size: 20px !important;
+font-weight: 700;
+text-transform: capitalize;
+}
+
+.faq-accord .accordion-item{
+background: none !important;
+border: 0 !important;
+border-top: 1px solid rgb(0 0 0 / 20%) !important;
+border-radius: 0px !important;
+}
+
+.faq-accord  .accordion-body{
+padding: 0px 0px 15px !important;
+color: rgb(0 0 0 / 70%);
+font-size: 15px;
+}

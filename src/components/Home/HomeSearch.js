@@ -1,8 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
 import Form from "react-bootstrap/Form";
-import TimePicker from "react-time-picker";
+
 export const HomeSearch = () => {
-  const [value, setValue] = useState("10:00");
   return (
     <>
       <div className="homepage-head">
@@ -40,13 +39,6 @@ export const HomeSearch = () => {
           alt="banner"
         />
       </div>
-
-      <TimePicker
-        onChange={setValue}
-        value={value}
-        disableClock={true}
-        format="HH:mm"
-      />
     </>
   );
 };

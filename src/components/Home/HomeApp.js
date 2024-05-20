@@ -13,8 +13,8 @@ export const HomeApp = () => {
                         <p>Accumsan pulvinar turpis, in vehicula dolor molestie eget. Sed tristique, neque et efficitur euismod, diam magna tempor tortor, vitae varius est ante quis libero.</p>
                         <ul>
                             <li><img src="./assets/home/app-qrcode.webp" alt="QR"/></li>
-                            <li><Link to={""}><img src="./assets/home/google-app.png" alt="app"/></Link></li>
-                            <li><Link to={""}><img src="./assets/home/apple-app.png" alt="app"/></Link></li>
+                            <li><Link to={""}><img src="./assets/home/google-app.webp" alt="app"/></Link></li>
+                            <li><Link to={""}><img src="./assets/home/apple-app.webp" alt="app"/></Link></li>
                         </ul>
                     </div>
                 </div>

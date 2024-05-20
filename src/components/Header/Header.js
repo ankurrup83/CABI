@@ -1,8 +1,10 @@
 import React,{useState,useEffect} from 'react'
 import "./header.css"
+import "../Footer/footer.css"
 import "../Home/home.css"
 import { Link } from 'react-router-dom'
 import LoginModal from './LoginModal';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 export default function Header() {
     
 const[modalShow,setModalShow]=useState(false);
@@ -25,7 +27,7 @@ const handleScroll = () => {
   }, []);
   return ( 
     <>
-    <div className= {`header-area ${isSticky ? "stick" : ""}`}>
+    <div className={`header-area ${isSticky ? "stick" : ""}`}>
         <div className="container">
             <div className="row align-items-center">
                 <div className="col-7 col-lg-2 col-md-3">

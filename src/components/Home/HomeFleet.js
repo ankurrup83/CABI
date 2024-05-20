@@ -3,6 +3,7 @@ import Slider from "react-slick";
 export const HomeFleet = () => {
     var settings = {
         dots: true,
+        arrows: false,
         infinite: true,
         speed: 1200,
         slidesToShow: 3,
