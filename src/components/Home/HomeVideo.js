@@ -18,13 +18,9 @@ export const HomeVideo = () => {
               
         <img src="./assets/home/video-thumb.webp" className='img-responsive' alt="Video"/>
 
-        {/* <div id="videochasingcontentt" className="home-newvideo-box-content" style="display: none;">
-            <video id="player" className="parallex-homevideo" autoplay loop playsinline muted>
-            <source width="100%" height="555" src="https://www.skiltravel.com/website/img/video/SKILTravel.mp4" type="video/mp4" id="">
-            </video>
-        </div> */}
+      
         {openModal ? (
-        <VideoPopup open={openModal} onCloseVideoModal={onCloseVideoModal} />
+        <VideoPopup show={openModal}  onHide={() => setOpenModal(false)}/>
       ) : (
         ""
       )}

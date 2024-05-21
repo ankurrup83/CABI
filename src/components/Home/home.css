@@ -7,6 +7,7 @@ position: relative;
 display: block;
 max-width: 100%;
 height: auto;
+width: 100%;
 }
 
 .home-searchbar{
@@ -641,6 +642,10 @@ display: none;
 position: relative;
 }
 
+.honepage-video .img-responsive {
+width: 100%;
+}
+
 .honepage-video .heading {
 color: #fff;
 margin-top: 40px;
@@ -835,6 +840,7 @@ margin: 5px 0px 0px;
 }
 
 .home-destination .tab-content .parentclass.active img {
+width: 100%;
 -webkit-animation: fadeInUp2 1.5s ease;
 animation: fadeInUp2 1.5s ease;
 -webkit-animation-duration: 1s;
@@ -851,14 +857,19 @@ transition: 1000ms cubic-bezier(.165,.84,.44,1);
     transform: translateY(0); } 
 }
 
+
+.wave-links{
+position: absolute;
+bottom: 100px;
+width: 100%;
+}
+
 .desti-tablink{
 position: absolute;
-bottom: 120px;
 left: 0;
+right: 0;
 width: 100%;
-display: flex;
-align-items: center;
-justify-content: space-evenly;
+bottom: 70px;
 }
 
 .desti-tablink button{
@@ -870,8 +881,42 @@ text-transform: uppercase;
 background: none;
 border: 0px;
 padding: 0;
+transform: translateX(-46px);
+position: absolute;
+width: 92px;
+}
+
+.desti-tablink button:nth-child(1){
+left: 14.3%;
+}
+
+.desti-tablink button:nth-child(2){
+left: 28.5%;
+}
+
+.desti-tablink button:nth-child(3){
+left: 42.9%;
+}
+
+.desti-tablink button:nth-child(4){
+left: 57.1%;
+}
+
+.desti-tablink button:nth-child(5){
+left: 71.4%;
+}
+
+.desti-tablink button:nth-child(6){
+left: 85.7%;
 }
 
 .desti-tablink button:hover{
 color: #F58220;
+}
+
+
+#myCanvas {
+display: block;
+width: 100%;
+height: 200px;
 }

@@ -33,7 +33,7 @@ color: #fff;
 
 .footer{
 background: url(../../../public/assets/home/footer-bg.webp) no-repeat;
-background-position: center;
+background-position: top;
 background-size: cover;
 padding-top: 200px;
 margin-top: -90px;

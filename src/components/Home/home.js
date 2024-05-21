@@ -14,6 +14,7 @@ import { HomeBusiness } from './HomeBusiness'
 import { HomeVideo } from './HomeVideo'
 import { HomeTestimonial } from './HomeTestimonial'
 import { HomeDestination } from './HomeDestination'
+import VideoPopup from './VideoPopup'
 
 export default function Home() {
   return (
