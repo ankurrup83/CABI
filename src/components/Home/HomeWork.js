@@ -11,7 +11,7 @@ export const HomeWork = () => {
         <div className="skilwork-row">
             <div className="container">  
                 <div className="row align-items-center"> 
-                    <div className="col-lg-7">
+                    <div className="col-lg-7 col-md-6 wow animate__animated animate__slideInUp" data-wow-delay="0.1s" data-wow-duration="1.1s">
                         <div className="skilwork-content">
                             <span>01</span>
                             <h4 className='heading'>Find the perfect car</h4>
@@ -19,7 +19,7 @@ export const HomeWork = () => {
                         </div>
                     </div>
 
-                    <div className="col-lg-5">
+                    <div className="col-lg-5 col-md-6">
                         <img src="./assets/home/skilwork-1.webp" className='img-responsive' alt="work"/>
                     </div>
                 </div>
@@ -32,11 +32,11 @@ export const HomeWork = () => {
         <div className="skilwork-row">
             <div className="container">  
                 <div className="row align-items-center"> 
-                    <div className="col-lg-5">
+                    <div className="col-lg-5 col-md-6 order-2 order-lg-1 order-md-1">
                         <img src="./assets/home/skilwork-2.webp" className='img-responsive' alt="work"/>
                     </div>
 
-                    <div className="col-lg-7">
+                    <div className="col-lg-7 col-md-6 order-1 order-lg-2 order-md-2 wow animate__animated animate__slideInUp" data-wow-delay="0.1s" data-wow-duration="1.1s">
                         <div className="skilwork-content skilwork-left">
                             <span>02</span>
                             <h4 className='heading'>Book your trip</h4>
@@ -53,7 +53,7 @@ export const HomeWork = () => {
         <div className="skilwork-row">
             <div className="container">  
                 <div className="row align-items-center"> 
-                    <div className="col-lg-7">
+                    <div className="col-lg-7 col-md-6 wow animate__animated animate__slideInUp" data-wow-delay="0.1s" data-wow-duration="1.1s">
                         <div className="skilwork-content">
                             <span>03</span>
                             <h4 className='heading'>Hit The Road</h4>
@@ -61,7 +61,7 @@ export const HomeWork = () => {
                         </div>
                     </div>
 
-                    <div className="col-lg-5">
+                    <div className="col-lg-5 col-md-6">
                         <img src="./assets/home/skilwork-3.webp" className='img-responsive' alt="work"/>
                     </div>
                 </div>

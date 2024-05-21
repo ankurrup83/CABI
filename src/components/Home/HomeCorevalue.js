@@ -11,6 +11,28 @@ export const HomeCorevalue = () => {
         autoplay: true,
         pauseOnHover: false,
         cssEase: "ease",
+        responsive: [
+        {
+            breakpoint: 992,
+            settings: {
+            slidesToShow:3,
+            }
+        },  
+    
+        {
+            breakpoint: 767,
+            settings: {
+            slidesToShow:2,
+            }
+        },  
+    
+        {
+            breakpoint: 600,
+            settings: {
+            slidesToShow: 1,
+            }
+        }
+        ]
       };
   return (
     <>

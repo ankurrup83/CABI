@@ -35,12 +35,12 @@ export const HomeSearch = () => {
             <div className="col-lg-12">
               <div className="home-searchbar">
                 <div className="homesearch-feild">
-                  <label>Trip Type</label>
-                  <select name="" id="" className="form-control" required="">
-                    <option value="">Drop To Airport</option>
-                    <option value="">Drop To Airport</option>
-                    <option value="">Drop To Airport</option>
-                  </select>
+                    <label>Trip Type</label>
+                    <select name="" id="" className="form-control" required="">
+                        <option value="">Choose Trip Type</option>
+                        <option value="">Drop To Airport</option>
+                        <option value="">Pickup from Airport</option>
+                    </select>
                 </div>
 
                 <div className="homesearch-feild">
@@ -68,7 +68,7 @@ export const HomeSearch = () => {
                   </div>
                 </div>
 
-                <div className="homesearch-feild last-feild">
+                <div className="homesearch-feild seach-timepick">
                   <label>Pickup Time</label>
                   <LocalizationProvider dateAdapter={AdapterDayjs}>
                     <Box
@@ -76,7 +76,6 @@ export const HomeSearch = () => {
                         display: "flex",
                         flexDirection: "column",
                         alignItems: "center",
-                        mt: 4,
                       }}
                     >
                       <TimePicker

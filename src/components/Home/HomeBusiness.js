@@ -11,10 +11,10 @@ export const HomeBusiness = () => {
                 <div className="col-lg-12">
                     <div className='skil-business'>
                         <div className="row justify-content-end"> 
-                            <div className="col-lg-7">
+                            <div className="col-lg-7 col-md-9">
                                 <h4 className='heading'>SKIL For Business</h4>
                                 <p>Helping your business move forward, sustainably.</p>
-                                <ul>
+                                <ul className='wow animate__animated animate__bounceIn' data-wow-delay="0.2s" data-wow-duration="1.4s">
                                     <li>
                                         <img src="./assets/home/business-icon-1.png" alt="icon"/>
                                         <span>Effortless Booking</span>

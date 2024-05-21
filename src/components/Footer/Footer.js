@@ -12,7 +12,7 @@ export default function Footer() {
                     <h4 className='heading center-heading'>Get started with CABI</h4>
                 </div>  
                   
-                <div className="col-lg-6">
+                <div className="col-lg-6 col-md-6">
                     <div className='getstarted-box'>
                         <img src="./assets/home/getstarted-1.webp" className='img-responsive' alt="get started" />
                         <div className='getstarted-detail'>
@@ -28,7 +28,7 @@ export default function Footer() {
                     </div>
                 </div>
                   
-                <div className="col-lg-6">
+                <div className="col-lg-6 col-md-6">
                     <div className='getstarted-box'>
                         <img src="./assets/home/getstarted-2.webp" className='img-responsive' alt="get started" />
                         <div className='getstarted-detail'>
@@ -51,16 +51,16 @@ export default function Footer() {
       <footer className="footer">
           <div className="container">
               <div className="row align-items-center">
-                  <div className="col-lg-4">
+                  <div className="col-lg-4 col-md-4">
                       <div className="footer-logo">
                           <img src="./assets/home/logo.png" alt="Logo"/>
                           <p>At CABI BY SKIL, we are passionate about redefining travel experiences. As a leading travel management company, we specialise in providing tailored solutions for businesses of all sizes. </p>
                       </div> 
                   </div>
 
-                  <div className="col-lg-8">
+                  <div className="col-lg-8 col-md-8">
                       <div className="row">
-                          <div className="col-lg-4">
+                          <div className="col-6 col-lg-4 col-sm-4">
                               <ul className="footer-links">
                                   <li><Link to={"/"}>Home</Link></li>
                                   <li><Link to={"/"}>About Us</Link></li>
@@ -70,7 +70,7 @@ export default function Footer() {
                               </ul>
                           </div>
 
-                          <div className="col-lg-4">
+                          <div className="col-6 col-lg-4 col-sm-4">
                               <ul className="footer-links">
                                   <li><Link to={"/"}>My Account</Link></li>
                                   <li><Link to={"/"}>Refund Policy</Link></li>
@@ -80,7 +80,7 @@ export default function Footer() {
                               </ul>
                           </div>
                           
-                          <div className="col-lg-4">
+                          <div className="col-12 col-lg-4 col-sm-4">
                               <ul className="footer-links">
                                   <li><Link to={"/"}>User Agreement</Link></li>
                                   <li><Link to={"/"}>Travel Policy</Link></li>

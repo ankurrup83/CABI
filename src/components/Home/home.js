@@ -13,6 +13,7 @@ import { HomeFAQ } from './HomeFAQ'
 import { HomeBusiness } from './HomeBusiness'
 import { HomeVideo } from './HomeVideo'
 import { HomeTestimonial } from './HomeTestimonial'
+import { HomeDestination } from './HomeDestination'
 
 export default function Home() {
   return (
@@ -21,13 +22,13 @@ export default function Home() {
     <HomeSearch/>
     <HomeQuote/>
     <HomeFeature/>
-    <HomeFleet/>
+    <HomeFleet />
+    <HomeDestination/>
     <HomeCorevalue/>
     <HomeWork />
     <HomeBusiness />
     <HomeVideo />
     <HomeTestimonial/>
-
     <HomeApp/>
     <HomeNews/>
     <HomeFAQ/>

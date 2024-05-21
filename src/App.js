@@ -1,6 +1,7 @@
 import {BrowserRouter as Router ,Routes,Route} from "react-router-dom";
 import Home from "./components/Home/home";
 import About from "./components/About/about";
+import 'animate.css/animate.min.css';
 function App() {
   return (
     <Router>
