@@ -1,8 +1,5 @@
 import React, { useState } from "react";
-import Form from "react-bootstrap/Form";
-import { Button, Col, Row } from "react-bootstrap";
 import ReactDOM from "react-dom";
-
 import { Modal } from "react-bootstrap";
 
 export default function VideoPopup(props) {
@@ -10,25 +7,19 @@ export default function VideoPopup(props) {
     const { onHide } = props;
    
   return (
-      <>
-          
-          <Modal
+      <>   
+    <Modal
       {...props}
-      size="md"
+      size="lg"
       aria-labelledby="contained-modal-title-vcenter"
-      centered className='login-popup'
-    >
-     
-              <button onClick={onHide}>close</button>
-      <Modal.Body>
-      <video width="600" autoPlay loop playsinline controls>
-          <source src={videoSrc} type="video/mp4" />
-        </video>
-      </Modal.Body>
+      centered className='homevideo-popup'>
+        <button onClick={onHide} className="video-close"><img src="./assets/home/pop-close.webp" alt="close"/></button>
+        <Modal.Body>
+            <video autoPlay loop playsinline>
+                <source src={videoSrc} type="video/mp4" />
+            </video>
+        </Modal.Body>
     </Modal>
-        
-       
-        
     </>
   );
 }

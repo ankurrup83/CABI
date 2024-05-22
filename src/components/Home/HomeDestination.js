@@ -11,9 +11,9 @@ export const HomeDestination = () => {
     
         let c = canvas.getContext('2d');
         canvas.width = canvas.offsetWidth;
-        canvas.height = 200;
+        canvas.height = 80;
     
-        let y = canvas.height / 1.1;
+        let y = canvas.height / 1.4;
         let length = 0.01;
         let amplitude = 10;
         let frequency = 0.03;
@@ -85,28 +85,27 @@ export const HomeDestination = () => {
     
             if (clickX >= canvas.width * 0.1 && clickX < canvas.width * 0.2) {
                 slideEnabled = true;
-                document.getElementById("demo1").click();
+                document.getElementById("location1").click();
                 slideTargetX = dots[0].x - 40;
-                // document.getElementById("domo1").click();
           } else if (clickX >= canvas.width * 0.25 && clickX < canvas.width * 0.35) {
                 slideEnabled = true;
-                document.getElementById("demo2").click();
+                document.getElementById("location2").click();
             slideTargetX = dots[1].x - 40;
           } else if (clickX >= canvas.width * 0.4 && clickX < canvas.width * 0.5) {
                 slideEnabled = true;
-                document.getElementById("demo3").click();
+                document.getElementById("location3").click();
             slideTargetX = dots[2].x - 40;
           } else if (clickX >= canvas.width * 0.5 && clickX <= canvas.width * 0.62) {
                 slideEnabled = true;
-                document.getElementById("demo4").click();
+                document.getElementById("location4").click();
             slideTargetX = dots[3].x - 40;
           } else if (clickX >= canvas.width * 0.66 && clickX <= canvas.width * 0.76) {
                 slideEnabled = true;
-                document.getElementById("demo5").click();
+                document.getElementById("location5").click();
             slideTargetX = dots[4].x - 40;
           } else if (clickX >= canvas.width * 0.807 && clickX <= canvas.width * 0.907) {
                 slideEnabled = true;
-                document.getElementById("demo6").click();
+                document.getElementById("location6").click();
             slideTargetX = dots[5].x - 40;
           }
         };
@@ -185,12 +184,12 @@ export const HomeDestination = () => {
             
             <div className="wave-links">
                 <div className="desti-tablink">
-                    <button id="demo1" onClick={() => handleTabClick("tab1")}>Mumbai</button>
-                    <button id="demo2" onClick={() => handleTabClick("tab2")}>Delhi</button>
-                    <button id="demo3" onClick={() => handleTabClick("tab3")}>Bengaluru</button>
-                    <button id="demo4" onClick={() => handleTabClick("tab4")}>Chennai</button>
-                    <button id="demo5" onClick={() => handleTabClick("tab5")}>Kolkata</button>
-                    <button id="demo6" onClick={() => handleTabClick("tab6")}>Hyderabad</button>
+                    <button id="location1" onClick={() => handleTabClick("tab1")}>Mumbai</button>
+                    <button id="location2" onClick={() => handleTabClick("tab2")}>Delhi</button>
+                    <button id="location3" onClick={() => handleTabClick("tab3")}>Bengaluru</button>
+                    <button id="location4" onClick={() => handleTabClick("tab4")}>Chennai</button>
+                    <button id="location5" onClick={() => handleTabClick("tab5")}>Kolkata</button>
+                    <button id="location6" onClick={() => handleTabClick("tab6")}>Hyderabad</button>
                 </div>
                 <canvas id="myCanvas"></canvas>
             </div>
