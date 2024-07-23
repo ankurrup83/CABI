@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/CABI/static/css/main.284b726c.css",
+    "main.js": "/CABI/static/js/main.426d512d.js",
+    "static/js/453.ed6e8672.chunk.js": "/CABI/static/js/453.ed6e8672.chunk.js",
+    "static/media/homehead-bg.webp": "/CABI/static/media/homehead-bg.4cd4b34e9999308f7f22.webp",
+    "static/media/business-bg.webp": "/CABI/static/media/business-bg.2c116bf215f66052ad82.webp",
+    "static/media/skilwork-bg.webp": "/CABI/static/media/skilwork-bg.dadafb689290f8b1e7e4.webp",
+    "static/media/feature-bg.webp": "/CABI/static/media/feature-bg.fd4ea78c870d27afd1f1.webp",
+    "static/media/footer-bg.webp": "/CABI/static/media/footer-bg.28125961115d2c9a991b.webp",
+    "index.html": "/CABI/index.html",
+    "main.284b726c.css.map": "/CABI/static/css/main.284b726c.css.map",
+    "main.426d512d.js.map": "/CABI/static/js/main.426d512d.js.map",
+    "453.ed6e8672.chunk.js.map": "/CABI/static/js/453.ed6e8672.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.284b726c.css",
+    "static/js/main.426d512d.js"
+  ]
+}
